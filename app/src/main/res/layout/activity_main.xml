@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_width="279dp"
+        android:layout_height="450dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"

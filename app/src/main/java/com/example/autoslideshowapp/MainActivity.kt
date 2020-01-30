@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         //戻るボタンを押し画像が最初の場合最後表示
         back_button.setOnClickListener {
             if (cursor.moveToPrevious()==false){
-                cursor.moveToFirst()
+                cursor.moveToLast()
             }
             val fieldIndex=cursor.getColumnIndex(MediaStore.Images.Media._ID)
             val id=cursor.getLong(fieldIndex)
@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
 
         startStop_button.setOnClickListener {
             if(flag){
+                startStop_button.text="停止"
                 next_button.isEnabled=false
                 back_button.isEnabled=false
                 flag=false
